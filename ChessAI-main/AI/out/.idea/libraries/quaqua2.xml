@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="quaqua2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/production/AI/out/production/GameCovua/lib/quaqua.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
