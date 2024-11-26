@@ -5,7 +5,7 @@ plugins {
 group 'com.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = '11'  // Java 11을 사용할 경우
+sourceCompatibility = '21'
 
 repositories {
     mavenCentral()
