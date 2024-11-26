@@ -1,21 +1,19 @@
 plugins {
     id 'java'
+    id 'application'  // 이 플러그인을 추가하여 실행 가능한 JAR 파일을 만듭니다
 }
 
-group 'com.example'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = '17'  // Java 17로 변경 (호환성 문제 방지)
+mainClassName = 'com.example.Main'  // 메인 클래스를 지정하세요 (패키지명 포함)
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.apache.commons:commons-lang3:3.12.0'  // 의존성 예시
-    testImplementation 'junit:junit:4.13.2'  // 테스트 의존성 예시
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    testImplementation 'junit:junit:4.13.2'
 }
 
 test {
-    useJUnitPlatform()  // JUnit 5 사용할 경우
+    useJUnitPlatform()
 }
