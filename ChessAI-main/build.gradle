@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '11'  // Java 11을 사용할 경우
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.12.0'  // 의존성 예시
+    testImplementation 'junit:junit:4.13.2'  // 테스트 의존성 예시
+}
+
+test {
+    useJUnitPlatform()  // JUnit 5 사용할 경우
+}
